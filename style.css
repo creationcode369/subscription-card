@@ -1,0 +1,159 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Open Sans", sans-serif;
+	text-decoration:none;
+	list-style:none;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(125deg,#1fb19d,
+    #c6b70d);
+}
+
+.container{
+    max-width:100%;
+    margin:auto;
+    padding:30px;
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.pricing-table{
+    background:#f1f1f1;
+    flex:1;
+    margin:10px;
+    text-transform:uppercase;
+}
+
+.pricing-header{
+    color:#fff;
+    position:relative;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 0;
+}
+
+.price span{
+    font-size:30px;
+    margin:0 5px;
+}
+
+.title{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%,50%);
+    width:80%;
+    max-width:360px;
+    text-align:center;
+    padding:7px 0;
+    font-size:14px;
+}
+
+.pricing-list{
+    padding:10px 20px;
+}
+
+.pricing-list li{
+    margin:7px 0;
+    font-size:14px;
+    text-align:center;
+    color:#2f3640;
+}
+
+.border{
+    width:80px;
+    height:1px;
+    background:#718093;
+    margin:auto;
+}
+
+.pricing-table a{
+    display:block;
+    width:80%;
+    margin:auto;
+    margin-bottom:20px;
+    text-align:center;
+    padding:7px 0;
+    border:1px solid;
+    color:#c23616;
+    max-width:360px;
+    font-size:14px;
+    transition: .2s linear;
+}
+
+.pricing-table a:hover{
+    border-radius:30px;
+}
+
+.table1 .pricing-header{
+    background:#0097e6;
+}
+
+.table2 .pricing-header{
+    background:#e1b12c;
+}
+
+.table3 .pricing-header{
+    background:#44bd32;
+}
+
+.table1 .title{
+    background:linear-gradient(125deg,#00a8ff,#0097e6);
+}
+
+.table2 .title{
+    background:linear-gradient(125deg,#fbc531,#e1b12c);
+}
+
+.table3 .title{
+    background:linear-gradient(125deg,#4cd137,#44bd32);
+}
+
+.table1 a{
+    color:#0097e6;
+}
+
+.table2 a{
+    color:#e1b12c;
+}
+
+.table3 a{
+    color:#44bd32;
+}
+
+.table1 a:hover{
+    background:#0097e6;
+    color:#fff;
+    border-color:#0097e6;
+    box-shadow:0 0 5px #0097e6;
+}
+
+.table2 a:hover{
+    background:#e1b12c;
+    color:#fff;
+    border-color:#e1b12c;
+    box-shadow:0 0 5px #e1b12c;
+}
+
+.table3 a:hover{
+    background:#44bd32;
+    color:#fff;
+    border-color:#44bd32;
+    box-shadow:0 0 5px #44bd32;
+}
+
+@media screen and (max-width:780px){
+    .pricing-table{
+        flex:100%;
+    }
+}
